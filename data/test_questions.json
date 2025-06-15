@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "question": "测试题目",
+        "options": [
+            "选项A",
+            "选项B",
+            "选项C",
+            "选项D"
+        ],
+        "answer": 0,
+        "category": "测试类别",
+        "last_reviewed": "2023-10-01",
+        "review_count": 5,
+        "correct_count": 3,
+        "accuracy_rating": 0.6,
+        "analysis": "这是一个测试题目的分析"
+    }
+]
