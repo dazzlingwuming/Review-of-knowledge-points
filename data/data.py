@@ -12,7 +12,7 @@ def load_questions(path):
             questions.append(Question(** q_data))
         return questions #返回题目对象
 
-def save_questions(questions, path):
+def save_questions(questions, path):#这里的题目对象是所有题目的对象
     with open(path, 'w', encoding='utf-8') as file:
         # 通过__ dict __方法将对象转换为字典,然后使用json.dump保存
         json.dump([q.__dict__ for q in questions], file, ensure_ascii=False, indent=4)
@@ -32,12 +32,10 @@ if __name__ == "__main__":
     # 测试保存功能
     #构建一个测试题目
     test_question = Question(
-        id=1,
+        id=2,
         question="测试题目",
         options=["选项A", "选项B", "选项C", "选项D"],
         answer=0,
-        category="测试类别",
-        last_reviewed="2023-10-01",
         review_count=5,
         correct_count=3,
         accuracy_rating=0.6,
